@@ -86,7 +86,6 @@ HISTSIZE=10000
 HISTFILESIZE=20000
 # These values are 10x higher than default.
 
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
