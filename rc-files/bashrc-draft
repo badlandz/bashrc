@@ -10,6 +10,7 @@ export EDITOR=nvim
 set -o vi
 xmodmap ~/.Xmodmap
 #alias sudo=doas
+alias v='nvim ~/ReadMe.md'
 alias vi='nvim'
 alias vim='nvim'
 alias nv='nvim'
@@ -162,7 +163,14 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Robert W. Current's personal ls shortcuts:
+alias lla='/usr/local/bin/exa -al'
+alias la='/usr/local/bin/exa -a'
+alias l='/usr/local/bin/exa'
+alias lr='/usr/local/bin/exa -R'
+alias ll='/usr/local/bin/exa -l --sort newest'
+alias l.='la -d .?*'
 
+alias s='du -sh * | sort -h'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -200,6 +208,10 @@ fi
 ## fi
 ## eval "$(starship init bash)"
 ## 
+
+alias vim='nvim'
+alias vi='nvim'
+
 ## ## # Define Current Law as Business Class
 ## ## alias cl='cd ~/open-matters/;vim -c NERDTree ~/src/business/matters/ReadMe.md;cd ~/;clear;neofetch;l'
 ## ## # Start My "Business Class" flight
