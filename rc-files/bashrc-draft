@@ -6,9 +6,9 @@ export PATH="~/.local/bin:~/.cargo/bin:/home/coyote2/bin:$PATH"
 # LATER: this file is located at ~/etc/bashrc
 # LATER: this file is located at ~/etc/bashrc
 # local might be better?
-export EDITOR=nvim
+export EDITOR=lvim
 set -o vi
-xmodmap ~/.Xmodmap
+#xmodmap ~/.Xmodmap
 #alias sudo=doas
 alias v='nvim ~/ReadMe.md'
 alias vi='nvim'
@@ -147,7 +147,7 @@ export PS1="\[\e[34m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]:\[\e[33m\]\w\[\e[m\]\\$ "
 # enable color support of ls and also add handy aliases
 if [ -x dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+#    alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
@@ -217,8 +217,22 @@ fi
 ## ## jthelp.sh
 
 
+## # ## # Adapted from https://unix.stackexchange.com/a/113768/347104
+## # ## if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
+## # ##   # Adapted from https://unix.stackexchange.com/a/176885/347104
+## # ##   # Create session 'main' or attach to 'main' if already exists.
+## # ##   tmux new-session -A -s "REGULATOR"
+## # ## fi
+
+
+
 # This is broken, don't know what it was suppose to do
 # if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # Ubuntu Budgie END
+
+neofetch
+#motd
+#cat ~/MOTD.md
+
 
 
 # if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then source /usr/share/powerline/bindings/bash/powerline.sh fi
