@@ -248,3 +248,7 @@ neofetch
 # eval "$(oh-my-posh init bash)"
 
 eval "$(starship init bash)"
+# Run This once to set theme:
+# starship preset gruvbox-rainbow -o ~/.config/starship.toml
+
+
